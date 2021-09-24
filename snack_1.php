@@ -3,7 +3,7 @@
 
 
 $list_number = [];
-while (count($list_number)  < "15") {
+while (count($list_number)  < 15) {
 
     $generate_random = mt_rand(1, 100);
     if (!in_array($generate_random, $list_number)) {
@@ -28,7 +28,7 @@ var_dump($list_number);
     <h1>lista di 15 numeri casuali diversi</h1>
 
     <?php foreach ($list_number as $number) { ?>
-        <p><?php echo $paragrph ?> </p>
+        <p><?php echo $number ?> </p>
     <?php } ?>
 
 </body>
